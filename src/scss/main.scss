@@ -1,0 +1,46 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* COLORS */
+$dark-grey: #222;
+$light-grey: #555;
+$primary: #eee;
+$purple-dark: rgb(180, 58, 164);
+$purple-light: rgb(219, 88, 211);
+
+body,
+html {
+    background: $dark-grey;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar {
+    background-color: $purple-dark;
+    .navbar-brand {
+        color: $primary;
+        font-weight: 900;
+    }
+    .nav-item {
+        .nav-link {
+            color: #fff;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.5rem;
+            background-color: $purple-dark;
+            &:hover {
+                background: $purple-light;
+                color: $primary;
+                border-radius: 0.5rem;
+                transition: all 0.5s ease;
+            }
+        }
+    }
+}
+footer {
+    .links a {
+        text-decoration: none;
+        color: $light-grey;
+        font-weight: 300;
+        &:hover {
+            color: $purple-light;
+        }
+    }
+}
